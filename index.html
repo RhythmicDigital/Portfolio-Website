@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Exo+2:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── ANIMATED BACKGROUND ─────────────────────────────────── -->
+  <div class="bg-scene">
+    <div class="orb1 bg-orb"></div>
+    <div class="orb2 bg-orb"></div>
+    <div class="orb3 bg-orb"></div>
+    <div class="bubbles" id="bubbles"></div>
+  </div>
+
+  <div class="page">
+
+    <!-- ── NAVIGATION ─────────────────────────────────────────── -->
+    <nav>
+      <div class="nav-logo" id="nav-logo"></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#" id="nav-cta" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ── HERO ───────────────────────────────────────────────── -->
+    <section id="hero" class="glass fade-in">
+      <div>
+        <div class="hero-badge">Available for opportunities</div>
+        <h1 class="hero-name">
+          <span id="hero-first"></span><br>
+          <span id="hero-last" style="background:linear-gradient(135deg,#0066aa,#0096b4,#00c8e8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"></span>
+        </h1>
+        <div class="hero-title" id="hero-title"></div>
+        <p class="hero-desc">
+          I build intelligent web applications that bridge the gap between data science
+          and delightful user experiences. Passionate about open-source, hackathons,
+          and shipping things that matter.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+            </svg>
+            View Projects
+          </a>
+          <a href="#" id="btn-contact" class="btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m2 7 10 7 10-7"/>
+            </svg>
+            Get in Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Photo -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-glow"></div>
+        <div class="hero-photo-ring">
+          <div class="hero-photo-inner" id="hero-photo-inner">
+            <!-- Populated by main.js based on PORTFOLIO.photo -->
+          </div>
+        </div>
+        <div class="photo-badge" style="bottom:20px;right:-20px;">
+          <div class="badge-dot" style="background:#00c8e8;"></div>
+          React · Node
+        </div>
+        <div class="photo-badge" style="top:24px;right:-30px;">
+          <div class="badge-dot" style="background:#52d68a;"></div>
+          ML / AI
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS BAR ──────────────────────────────────────────── -->
+    <section id="skills-bar" class="glass fade-in">
+      <div class="skills-grid" id="skills-grid">
+        <!-- Populated by main.js from PORTFOLIO.skills -->
+      </div>
+    </section>
+
+    <!-- ── ABOUT ───────────────────────────────────────────────── -->
+    <div class="section-header fade-in">
+      <span class="section-num">01</span>
+      <div class="section-line"></div>
+      <h2 class="section-label">About Me</h2>
+      <div class="section-line rtl"></div>
+    </div>
+
+    <section id="about" class="glass fade-in">
+      <div class="about-grid">
+        <div class="about-text" id="about-bio">
+          <!-- Populated by main.js from PORTFOLIO.bio -->
+        </div>
+        <div class="stats-grid" id="stats-grid">
+          <!-- Populated by main.js from PORTFOLIO.stats -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ──────────────────────────────────────────── -->
+    <div id="experience" class="section-header fade-in">
+      <span class="section-num">02</span>
+      <div class="section-line"></div>
+      <h2 class="section-label">Experience</h2>
+      <div class="section-line rtl"></div>
+    </div>
+
+    <div id="exp-list" class="exp-list">
+      <!-- Populated by main.js from PORTFOLIO.experience -->
+    </div>
+
+    <!-- ── PROJECTS ────────────────────────────────────────────── -->
+    <div id="projects" class="section-header fade-in">
+      <span class="section-num">03</span>
+      <div class="section-line"></div>
+      <h2 class="section-label">Projects</h2>
+      <div class="section-line rtl"></div>
+    </div>
+
+    <div id="projects-grid" class="projects-grid">
+      <!-- Populated by main.js from PORTFOLIO.projects -->
+    </div>
+
+    <!-- ── CONTACT ─────────────────────────────────────────────── -->
+    <div class="section-header fade-in">
+      <span class="section-num">04</span>
+      <div class="section-line"></div>
+      <h2 class="section-label">Let's Connect</h2>
+      <div class="section-line rtl"></div>
+    </div>
+
+    <section id="contact" class="glass fade-in">
+      <div class="contact-heading">Let's build something great 🚀</div>
+      <p class="contact-sub">Open to full-time roles, hackathon teams, and freelance projects. Let's talk!</p>
+      <div class="contact-links" id="contact-links">
+        <!-- Populated by main.js from PORTFOLIO.contact -->
+      </div>
+      <a href="#" id="contact-cta" class="btn-primary" style="font-size:16px;padding:14px 40px;">
+        Say Hello ✉️
+      </a>
+    </section>
+
+    <footer>
+      Built with ❄️ by <span id="footer-name"></span> &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; All rights reserved
+    </footer>
+
+  </div><!-- /.page -->
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
